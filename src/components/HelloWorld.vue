@@ -50,7 +50,7 @@ export default {
   methods: {
     async convertCurrency() {
       try {
-        const response = await axios.get('http://localhost:3000/api/convert', {
+        const response = await axios.get('https://currency-api-vd6z.onrender.com/api/convert', {
           params: {
             from: this.from,
             to: this.to,
